@@ -74,6 +74,13 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    let peopleByLastName = people.sort(
+      (person1, person2) => {
+        let lastName1 = person1.split(',')[0];
+        let lastName2 = person2.split(',')[0];
+        return (lastName1.localeCompare(lastName2));
+      }
+    );
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
