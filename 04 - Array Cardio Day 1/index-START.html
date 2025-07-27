@@ -85,6 +85,12 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
+    let numOccurences = data.reduce(
+      (acc, dataPoint) => {
+        if(!acc.hasOwnProperty(dataPoint)) acc[dataPoint] = 0;
+        acc[dataPoint]++
+        return acc;
+      },{})
 
   </script>
 </body>
